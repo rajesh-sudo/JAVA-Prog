@@ -1,0 +1,20 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        String[] Name={"Prdeep Kumar Pani","Bhabesh Upadha","Rakesh Panigrahi","Rajesh Panigrahi"};
+        int size = Name.length;
+        String surName = "Panigrahi";
+        int surNameSize = surName.length();
+        for (int i=0;i<size;i++){
+            int length = Name[i].length();
+            //System.out.println("Length of string");
+            //System.out.println(length);
+            String subStr = Name[i].substring(length - surNameSize);
+            if(subStr.equals(surName))  
+            {  
+            System.out.println(Name[i]);  
+            
+            }
+     }
+     }
+}
